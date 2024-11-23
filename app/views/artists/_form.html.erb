@@ -1,0 +1,11 @@
+<%= form_with model: artist do |f| %>
+  <%= f.label :name  %>
+  <%= f.text_field :name  %>
+  <%= f.label :country  %>
+  <%= f.text_field :country  %>
+  <%= f.label :top_hit  %>
+  <%= f.text_field :top_hit  %>
+  <%= f.label :album_count  %>
+  <%= f.number_field :album_count  %>
+  <%= f.submit %>
+<% end %>

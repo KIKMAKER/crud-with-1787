@@ -1,0 +1,12 @@
+<p><%= link_to 'all artists', artists_path %> </p>
+<h1><%= @artist.name %></h1>
+
+<p>The artist <%= @artist.name %> is from <%= @artist.country %>.</p>
+
+
+<h2><%= @artist.name %> has released <%= @artist.album_count %> albums</h2>
+
+<h3><%= @artist.top_hit %> is their number one song</h3>
+
+<p> <%= link_to 'edit', artist_edit_path(@artist) %> </p>
+<p><%= link_to 'delete artist', artist_path(@artist), data: {turbo_method: :delete, turbo_confirm: "Are you sure?"} %></p>
